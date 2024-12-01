@@ -53,7 +53,7 @@ function SideBarTop({ user , getActiveTeamId}: any) {
   return (
     <div className='p-6 flex flex-col'>
       <div className='flex items-center gap-3 py-2 px-4 rounded-md  cursor-pointer hover:bg-[#F6F6F6]'>
-        <Image src="/logo-eraser.png" alt="Logo" width={40} height={40} />
+        <img src="/logo-eraser.png" alt="Logo" width={40} height={40} />
 
 
         <Popover>
