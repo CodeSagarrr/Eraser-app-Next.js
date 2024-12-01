@@ -50,7 +50,7 @@ const FileList = ({ user }: any) => {
                   <td className="whitespace-nowrap px-4 py-2 text-gray-700">{moment(curr._creationTime).format("DD MMM YYYY")}</td>
                   <td className="whitespace-nowrap px-4 py-2 text-gray-700">{moment(curr._creationTime).startOf("day").fromNow()}</td>
                   <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                    <Image src={user?.picture} alt='Logo' className='w-[32px] h-[32px] rounded-full mx-3 ' />
+                    <img src={user?.picture} alt='Logo' className='w-[32px] h-[32px] rounded-full mx-3 ' />
                   </td>
                   <td className="whitespace-nowrap  text-gray-900">
                     <DropdownMenu>
