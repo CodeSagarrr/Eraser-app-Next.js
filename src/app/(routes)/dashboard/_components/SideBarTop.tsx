@@ -11,6 +11,7 @@ import { useConvex } from 'convex/react'
 import { api } from '../../../../../convex/_generated/api'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export interface Team {
   teamName: string;
@@ -52,7 +53,7 @@ function SideBarTop({ user , getActiveTeamId}: any) {
   return (
     <div className='p-6 flex flex-col'>
       <div className='flex items-center gap-3 py-2 px-4 rounded-md  cursor-pointer hover:bg-[#F6F6F6]'>
-        <img src="/logo-eraser.png" alt="Logo" width={40} height={40} />
+        <Image src="/logo-eraser.png" alt="Logo" width={40} height={40} />
 
 
         <Popover>
@@ -86,7 +87,7 @@ function SideBarTop({ user , getActiveTeamId}: any) {
             <Separator className='my-2' />
 
             <div className='flex gap-2 items-center'>
-              <img src={user?.picture} alt="Logo" className='w-10 h-10 rounded-full' />
+              <Image src={user?.picture} alt="Logo" className='w-10 h-10 rounded-full' />
               <div className='flex flex-col ml-1'>
                 <span className='text-[18px] font-bold'>{user?.given_name} {user?.family_name}</span>
                 <span className='text-[14px] text-medium text-gray-400'>{user?.email}</span>

@@ -7,6 +7,7 @@ import { api } from '../../../../../convex/_generated/api';
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs';
 import { toast } from "sonner"
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 
 function Teams() {
@@ -29,7 +30,7 @@ function Teams() {
     return (
         <div className='p-14'>
             <div className='flex gap-4'>
-                <img src={"/logo-eraser.png"} alt="Logo" width={85} />
+                <Image src={"/logo-eraser.png"}  alt="Logo" width={85} />
                 <h2 className='text-2xl font-extrabold'>Eraser</h2>
             </div>
             <div className='flex items-center flex-col w-full mt-24'>

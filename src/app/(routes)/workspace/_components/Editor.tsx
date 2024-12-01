@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import EditorJS from '@editorjs/editorjs';
 import Header from '@editorjs/header';
-// @ts-ignore
+// @ts-ignore;
 import Checklist from '@editorjs/checklist'
 import EditorjsList from '@editorjs/list';
 import Quote from '@editorjs/quote';
