@@ -26,12 +26,12 @@ function Hero() {
                         </p>
 
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            <span
+                            <button
                                 className="block w-full rounded border  bg-white px-9 py-3 text-sm font-medium text-black hover:bg-gray-300 transition-all focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"    
                             onClick={() => user ? router.push('/dashboard') : toast('You are not Registered')}
                             >
                                { user ? (<div className='flex gap-2 font-bold'>Dashboard <Home className='w-4 h-4 '/> </div>)  : (<div className='flex gap-2 font-bold'>Try Eraser <ArrowBigRight className='w-4 h-4 '/> </div>)  }
-                            </span>
+                            </button>
 
                     
                         </div>
